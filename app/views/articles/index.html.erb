@@ -1,0 +1,18 @@
+
+
+
+
+<h1 class="page-title">Articles</h1>
+
+<br>
+<%= link_to "Upload Your Own Articles", article_uploads_index_path, class: "upload-link" %>
+<br><br>
+
+<div class="articles-list">
+  <% @articles.each do |article| %>
+    <div class="article-card">
+      <%= link_to article.title, article, class: "article-title" %>
+    </div>
+  <% end %>
+</div>
+

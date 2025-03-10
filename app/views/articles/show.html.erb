@@ -1,0 +1,10 @@
+<%= link_to "Home", articles_path, class: "home-btn" %>
+
+<h1 class="article-title"><%= @article.title %></h1>
+
+<!-- Article Body with Enhanced Styling -->
+<div class="article-body">
+  <%= raw(@article.body) %> <!-- raw helper ensures HTML tags are rendered properly -->
+</div>
+
+<%= link_to "Back", ownArticle_path, class: "back-link" %>

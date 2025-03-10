@@ -1,0 +1,23 @@
+<%= link_to "Home", articles_path, class: "home-btn" %>
+
+
+<h1 class="articles-heading">My All Articles</h1>
+
+<p class="articles-description">Find me in app/views/article/index.html.erb</p>
+
+<%= link_to "Create", article_uploads_new_path, class: "create-article-btn" %>
+<br><br>
+
+<% (@user.articles).each do |article| %>
+  <div class="article-item">
+    <%= link_to article.title, article, class: "article-title" %>
+    
+    <div class="article-actions">
+      <%= link_to "Edit", edit_article_upload_path(article), class: "edit-btn" %>
+      <%= link_to "Delete", article_uploads_path(article), method: :delete, data: { confirm: "Are you sure to delete this article?" }, class: "delete-btn" %>
+    </div>
+  </div>
+  <br><br>
+<% end %>
+
+

@@ -1,0 +1,517 @@
+
+.button {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: auto;
+  transition: all 0.3s ease-in-out;
+  margin: 10px;
+}
+
+/* Primary Button (Login) */
+.login-btn {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: 2px solid #4CAF50;
+}
+
+.login-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+  border-color: #45a049;
+}
+
+/* Secondary Button (SignUp) */
+.signup-btn {
+  background-color: #008CBA; /* Blue background */
+  color: white;
+  border: 2px solid #008CBA;
+}
+
+.signup-btn:hover {
+  background-color: #007bb5; /* Darker blue on hover */
+  border-color: #007bb5;
+}
+
+/* Flash Message Styling */
+.flash-notice {
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark gray text */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #4CAF50; /* Green left border */
+  font-size: 18px;
+  text-align: center;
+}
+
+.flash-notice.success {
+  border-left-color: #4CAF50;
+}
+
+.flash-notice.error {
+  border-left-color: #FF5733; /* Red border for errors */
+  background-color: #FFCDD2; /* Light red background */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* General styling for buttons */
+  .button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+  }
+
+  .user-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-control:focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  /* General form styling for Login */
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Common Form Group Style */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Form label style */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Common Form Control Style */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Focused state for form controls */
+  .form-control:focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Link Styling */
+  .signup-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Flash Message Style (Optional) */
+  .flash-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  /* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Link to Upload Articles */
+  .upload-link {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .upload-link:hover {
+    background-color: #218838;
+  }
+  
+  /* Container for Articles */
+  .articles-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual Article Card */
+  .article-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Article Title Styling */
+  .article-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Hover Effect for Article Card */
+  .article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Hover Effect for Article Title */
+  .article-title:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+
+  /* Article Title Styling */
+.article-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* Article Title Styling */
+.article-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Title ko uppercase banaye */
+  }
+  
+  /* Article Body Styling */
+  .article-body {
+    max-width: 900px;                /* Body ka width increase kiya gaya */
+    margin: 40px auto;               /* Margin ko thoda increase kiya gaya taaki spacing better ho */
+    font-size: 20px;                 /* Font size ko thoda bada rakha gaya */
+    line-height: 1.75;               /* Line-height ko optimize kiya gaya for readability */
+    color: #444;                    /* Dark gray color for better contrast */
+    padding: 30px;                   /* Padding ko increase kiya gaya taaki body text comfortable ho */
+    background-color: #f4f4f4;       /* Light background color taaki text clearly visible ho */
+    border-radius: 10px;             /* Soft corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Subtle shadow to give focus effect */
+    text-align: justify;             /* Text ko justify kiya gaya taaki clean alignment ho */
+  }
+  
+  /* "Back" Link Styling */
+  .back-link {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 40px;
+    padding: 12px 30px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .back-link:hover {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Login Page Title Styling */
+.login-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+  
+  /* "Login" Link Styling */
+  .login-link {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 12px 20px;
+    width: 200px;
+    margin: 40px auto;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .login-link:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Main Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;  /* Light background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Title of Articles Page */
+  .articles-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Description below title */
+  .articles-description {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  /* Create Article Button */
+  .create-article-btn {
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .create-article-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Individual Article Item Styling */
+  .article-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Soft shadow for article card */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Title Link Styling */
+  .article-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .article-title:hover {
+    color: #007bff;
+  }
+  
+  /* Edit and Delete Button Styles */
+  .article-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .edit-btn, .delete-btn {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsiveness for Smaller Screens */
+  @media (max-width: 768px) {
+    .article-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .article-actions {
+      margin-top: 10px;
+      justify-content: center;
+    }
+  
+    .create-article-btn {
+      width: 180px;
+      margin: 20px auto;
+    }
+  }
+  /* Home Button Styling */
+.home-btn {
+    position: fixed;
+    bottom: 20px;       /* Bottom of the page */
+    left: 20px;         /* Left side of the page */
+    padding: 12px 20px;
+    background-color: #007bff;   /* Blue background for visibility */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;            /* Circular button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Subtle shadow for the button */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  /* Hover Effect for the Home Button */
+  .home-btn:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .home-btn {
+      bottom: 15px; /* Adjust button position on smaller screens */
+      left: 15px;
+      padding: 10px 18px;
+      font-size: 16px;  /* Slightly smaller font size for mobile devices */
+    }
+  }
+  
