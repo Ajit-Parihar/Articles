@@ -8,11 +8,25 @@
 <%= link_to "Upload Your Own Articles", article_uploads_index_path, class: "upload-link" %>
 <br><br>
 
-<div class="articles-list">
-  <% @articles.each do |article| %>
-    <div class="article-card">
-      <%= link_to article.title, article, class: "article-title" %>
-    </div>
+  <%# <div class="articles-list"> %>
+   <%#@articles.each do |article| %>
+<%#   <div class="article-card">
+     <%= link_to article.title, article, class: "article-title" %>
+    <%#</div>
   <% end %>
+<%#</div>%> 
+
+<div class="articles-list"> 
+<%cache @popular_articles do %>
+   <div class ="popular-articles">
+   <h2>Popular Articles</h2>
+
+       <% @popular_articles.each do |article|%>
+       <div class="article-card">
+       <%= link_to article.title, article, class: "article_title"%>
+       </div>
+       <%end%>
+</div>
+<%end%>
 </div>
 

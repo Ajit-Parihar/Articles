@@ -1,7 +1,11 @@
 class ArticlesController < ApplicationController
   #before_action :set_article, only: [:edit, :update, :show, :destroy]
   def index
-    @articles = Article.all
+    # @articles = Article.all
+    # @popular_articles = Article.limit(5)
+     @popular_articles = Rails.cache.fetch('popular_articles', expires_in: 1.hour) do     #  low level caching 
+      Article.limit(5)
+ end
   end
 
 
@@ -31,7 +35,6 @@ def update
 end
 
 private
-
 def article_params
   params.require(:article).permit(:title, :body)
 end

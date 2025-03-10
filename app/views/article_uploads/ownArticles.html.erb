@@ -6,6 +6,10 @@
 <p class="articles-description">Find me in app/views/article/index.html.erb</p>
 
 <%= link_to "Create", article_uploads_new_path, class: "create-article-btn" %>
+<br>
+<%if @user.profileImage.attached?%>
+<%= image_tag @user.profileImage, class: "create-article-btn"%>
+<%end%>
 <br><br>
 
 <% (@user.articles).each do |article| %>

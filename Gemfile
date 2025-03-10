@@ -55,7 +55,6 @@ group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [ :ruby ]
 end
 
-gem 'tailwindcss-rails'
 
 
 group :test do
@@ -65,3 +64,4 @@ group :test do
 end
 
 gem "tailwindcss-ruby", "~> 4.0"
+

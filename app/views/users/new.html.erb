@@ -7,8 +7,8 @@
   </div>
 
   <div class="form-group">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name, class: "form-control" %>
+    <%= form.label :Last_name %>
+    <%= form.text_field :Last_name, class: "form-control" %>
   </div>
 
   <div class="form-group">
@@ -16,6 +16,11 @@
     <%= form.email_field :email, class: "form-control" %>
   </div>
 
+  <div class="form_group">
+     <%= form.label :profileImage%><br><br>
+     <%= form.file_field :profileImage, class: "form_control"%>
+  </div>
+  <br>
   <div class="form-group">
     <%= form.label :password %>
     <%= form.password_field :password, class: "form-control" %>

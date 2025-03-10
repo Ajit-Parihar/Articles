@@ -45,6 +45,8 @@ Rails.application.routes.draw do
 
   root "users#index"
 
+  post "send_welocome_email", to: "users#send_welcome_email"
+
 
 
 end
