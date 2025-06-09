@@ -1,11 +1,10 @@
 class UsersController < ApplicationController
-
   def new
     @user = User.new
   end
-  
-  def for_testing
 
+  def for_testing
+    puts "learning git and github"
   end
 
   def create
@@ -22,9 +21,7 @@ class UsersController < ApplicationController
   end
 
   def send_welcome_email (user)
-
-    UserMailer.welcome_email(user).deliver 
-       
+    UserMailer.welcome_email(user).deliver
   end
 
   private
