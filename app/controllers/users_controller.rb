@@ -15,9 +15,6 @@ class UsersController < ApplicationController
   def for_testing_cherry_pick_function
   end
 
-  def Add_another_for_check_again_pull_request
-  end
-
   def create
       @user = User.new(user_params)
       if @user.save
