@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   def for_testing_ad
   end
 
-  def for_testin_add_feauture2_article_branch
+  def for_testin_add_feauture2_article
   end
 
   def create
