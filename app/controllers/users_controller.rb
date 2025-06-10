@@ -4,15 +4,12 @@ class UsersController < ApplicationController
   end
 
   def for_testing
-  end
+    end
 
   def for_another_testing
   end
 
   def for_testing_add_another_function
-  end
-
-  def for_testing_cherry_pick_function
   end
 
   def create
