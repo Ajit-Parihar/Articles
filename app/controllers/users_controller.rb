@@ -15,7 +15,10 @@ class UsersController < ApplicationController
   def for_testing_cherry_pick_function
   end
 
-  def for_testing_add
+  def for_testing_ad
+  end
+
+  def for_testin_add_feauture2_article_branch
   end
 
   def create
