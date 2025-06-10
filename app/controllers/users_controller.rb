@@ -4,8 +4,7 @@ class UsersController < ApplicationController
   end
 
   def for_testing
-    puts "testing pull request (PR)"
-  end
+    end
 
   def for_another_testing
   end
