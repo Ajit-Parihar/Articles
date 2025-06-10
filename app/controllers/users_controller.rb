@@ -7,6 +7,9 @@ class UsersController < ApplicationController
     puts "learning git and github"
   end
 
+  def for_another_testing
+  end
+
   def create
       @user = User.new(user_params)
 
