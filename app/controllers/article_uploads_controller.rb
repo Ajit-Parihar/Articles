@@ -1,5 +1,5 @@
 class ArticleUploadsController < ApplicationController
-  #before_action :set_article, only: [:edit, :update, :show, :destroy]
+  # before_action :set_article, only: [:edit, :update, :show, :destroy]
   def index
   end
 
@@ -8,7 +8,6 @@ class ArticleUploadsController < ApplicationController
   end
 
   def new
- 
     @article = Article.new
   end
 
@@ -25,11 +24,11 @@ class ArticleUploadsController < ApplicationController
 
   def create
     user = User.find_by(email: params[:email])
-     
+
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       flash[:notice] = "Login successfully"
-      redirect_to ownArticle_path 
+      redirect_to ownArticle_path
     else
        flash[:notice] = "Can't login Successfully"
        render :new
@@ -45,8 +44,6 @@ class ArticleUploadsController < ApplicationController
   #   end
   # end
 
-
-
   def update
     @article = Article.find(params[:format])
     if @article.update(article_params)
@@ -57,28 +54,25 @@ class ArticleUploadsController < ApplicationController
   end
 
   def destroy
-
     @article = Article.find(params[:id])
 
      if @article.destroy
 
       redirect_to ownArticle_path, notice: "Article Delete successfully"
 
-   end
-
+     end
 end
 
   # private
 
   def article_params
-      params.require(:article).permit(:id,:title,:body)
+      params.require(:article).permit(:id, :title, :body)
   end
-  
+
   # def set_article
   #     @article = Article.find(params[:format])
 
   #     rescue ActiveRecord::RecordNotFound => error
-  #       redirect_to ownArticle_path, notice: error 
+  #       redirect_to ownArticle_path, notice: error
   # end
-
 end
