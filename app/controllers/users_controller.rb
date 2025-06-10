@@ -1,11 +1,9 @@
 class UsersController < ApplicationController
-
   def new
     @user = User.new
   end
 
   def for_testing
-    
   end
 
   def for_another_testing
@@ -23,12 +21,11 @@ class UsersController < ApplicationController
   end
 
   def send_welcome_email (user)
-    UserMailer.welcome_email(user).deliver 
+    UserMailer.welcome_email(user).deliver
   end
 
   private
   def user_params
       params.require(:user).permit(:id, :first_name, :Last_name, :email, :profileImage, :password, :password_confirmation)
   end
-
 end
