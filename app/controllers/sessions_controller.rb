@@ -2,6 +2,21 @@ class SessionsController < ApplicationController
   def new
   end
 
+  def for_testing_cherry_pick_function
+  end
+
+  def for_testing_ad
+  end
+
+  def for_testin_add_feauture2_article_branch
+  end
+
+  def for_testing6
+  end
+
+  def for_another_testing5
+  end
+
   def create
       user = User.find_by(email: params[:email])
 

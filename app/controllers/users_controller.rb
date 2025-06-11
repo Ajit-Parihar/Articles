@@ -21,6 +21,24 @@ class UsersController < ApplicationController
   def for_testin_add_feauture2_article_branch
   end
 
+  def for_testing6
+  end
+
+  def for_another_testing5
+  end
+
+  def for_testing_add_another_function4
+  end
+
+  def for_testing_cherry_pick_function3
+  end
+
+  def for_testing_ad2
+  end
+
+  def for_testin_add_feauture2_article_branch1
+  end
+
   def create
       @user = User.new(user_params)
       if @user.save
